@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafios - Racha Cuca</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            width: 100%;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            color: #94a3b8;
+            font-size: 1rem;
+        }
+
+        .grid {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .card {
+            background: #1e293b;
+            border-radius: 20px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #334155;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 30px rgba(0,0,0,0.3);
+            border-color: #475569;
+        }
+
+        .card-link {
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            padding: 25px 30px;
+            gap: 20px;
+        }
+
+        .emoji {
+            font-size: 3rem;
+            min-width: 70px;
+            text-align: center;
+        }
+
+        .info {
+            flex: 1;
+        }
+
+        .info h2 {
+            font-size: 1.4rem;
+            color: #fff;
+            margin-bottom: 8px;
+        }
+
+        .info p {
+            color: #94a3b8;
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #334155;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.7rem;
+            color: #cbd5e1;
+            margin-top: 10px;
+        }
+
+        .seta {
+            font-size: 1.5rem;
+            color: #475569;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover .seta {
+            transform: translateX(5px);
+            color: #60a5fa;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: #64748b;
+            font-size: 0.8rem;
+            border-top: 1px solid #334155;
+        }
+
+        @media (max-width: 600px) {
+            .card-link {
+                padding: 20px;
+                flex-wrap: wrap;
+            }
+            .emoji {
+                font-size: 2rem;
+                min-width: 50px;
+            }
+            .info h2 {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🧠 Desafios</h1>
+            <p>Problemas de lógica e jogos para exercitar a mente</p>
+        </div>
+
+        <div class="grid">
+            <!-- Desafio 1 -->
+            <div class="card">
+                <a href="https://rachacuca.com.br/logica/problemas/amigas-na-piscina/" class="card-link" target="_blank" rel="noopener noreferrer">
+                    <div class="emoji">🏊‍♀️</div>
+                    <div class="info">
+                        <h2>Desafio 1 de Lógica</h2>
+                        <p>Amigas na Piscina - Descubra as características de cada menina seguindo as pistas.</p>
+                        <span class="tag">🧩 Problema de Lógica</span>
+                    </div>
+                    <div class="seta">→</div>
+                </a>
+            </div>
+
+            <!-- Desafio 2 -->
+            <div class="card">
+                <a href="https://rachacuca.com.br/logica/problemas/meia-maratona/" class="card-link" target="_blank" rel="noopener noreferrer">
+                    <div class="emoji">🏃‍♂️</div>
+                    <div class="info">
+                        <h2>Desafio 2 de Lógica</h2>
+                        <p>Meia Maratona - Descubra a ordem de chegada e as características dos corredores.</p>
+                        <span class="tag">🧩 Problema de Lógica</span>
+                    </div>
+                    <div class="seta">→</div>
+                </a>
+            </div>
+
+            <!-- Desafio 3 -->
+            <div class="card">
+                <a href="https://rachacuca.com.br/passatempos/jogo-da-memoria/" class="card-link" target="_blank" rel="noopener noreferrer">
+                    <div class="emoji">🃏</div>
+                    <div class="info">
+                        <h2>Desafio 3 de Memória</h2>
+                        <p>Jogo da Memória - Encontre todos os pares e treine sua concentração.</p>
+                        <span class="tag">🎮 Jogo de Memória</span>
+                    </div>
+                    <div class="seta">→</div>
+                </a>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Os desafios abrirão em uma nova aba. Boa sorte! 🍀</p>
+        </div>
+    </div>
+</body>
+</html>
