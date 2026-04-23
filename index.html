@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafios de Lógica de Programação</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 700px;
+            width: 90%;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px 30px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.2em;
+            color: #ffd700;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #ccc;
+            margin-bottom: 40px;
+            font-size: 1em;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+
+        .btn {
+            display: block;
+            padding: 14px 20px;
+            background: rgba(255, 215, 0, 0.15);
+            border: 2px solid #ffd700;
+            border-radius: 12px;
+            text-decoration: none;
+            font-size: 1.05em;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background: #ffd700;
+            color: #1a1a2e;
+        }
+
+        .btn-primary:hover {
+            background: #ffed4a;
+            transform: scale(1.02);
+            box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 215, 0, 0.1);
+            color: #ffd700;
+            border-color: #ffd700;
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 215, 0, 0.25);
+            transform: scale(1.02);
+        }
+
+        .btn-rachacuca {
+            background: rgba(100, 150, 255, 0.15);
+            border-color: #6495ff;
+            color: #6495ff;
+        }
+
+        .btn-rachacuca:hover {
+            background: rgba(100, 150, 255, 0.3);
+            transform: scale(1.02);
+        }
+
+        .divider {
+            margin: 15px 0 5px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        .divider span {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            color: #aaa;
+        }
+
+        .footer {
+            margin-top: 30px;
+            padding-top: 25px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .footer a {
+            color: #aaa;
+            text-decoration: none;
+            font-size: 0.85em;
+            transition: color 0.3s;
+        }
+
+        .footer a:hover {
+            color: #ffd700;
+        }
+
+        .emoji {
+            font-size: 1.1em;
+            margin-right: 8px;
+        }
+
+        .info {
+            margin-top: 20px;
+            font-size: 0.75em;
+            color: #666;
+        }
+
+        .warning {
+            background: rgba(255, 100, 100, 0.2);
+            border-left: 3px solid #ff6464;
+            padding: 10px;
+            margin-top: 15px;
+            border-radius: 8px;
+            font-size: 0.8em;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🧩 Desafios de Lógica</h1>
+        <div class="subtitle">Teste seu raciocínio com estes desafios!</div>
+
+        <div class="links">
+            <a href="https://www.educolorir.com/crosswords/python-4c0465cefb95f474d68322a3b04eb8ad" class="btn btn-primary" target="_blank">
+                <span class="emoji">🔤</span> Desafio 1 - Palavras Cruzadas Python
+            </a>
+            <a href="https://www.educolorir.com/crosswords/python2-a1ca385babc5c4dc7280e6ad941610a0" class="btn btn-secondary" target="_blank">
+                <span class="emoji">🔤</span> Desafio 2 - Palavras Cruzadas Python 2
+            </a>
+            <a href="https://rachacuca.com.br/logica/problemas/amigas-no-cinema-ii/" class="btn btn-rachacuca" target="_blank">
+                <span class="emoji">🎬</span> Desafio 3 - Amigas no Cinema (Problema de Lógica)
+            </a>
+        </div>
+
+        <div class="footer">
+            <a href="https://forms.gle/QvYjXnrAenbMSyTR8" target="_blank">
+                <span class="emoji">🆘</span> Solicitar suporte
+            </a>
+            <a href="https://forms.gle/T9QSe3PyEpru3t538" target="_blank">
+                <span class="emoji">📤</span> Enviar atividades
+            </a>
+        </div>
+
+        <div class="info">
+            <p>📦 Repositório: <strong>desafios-logica</strong></p>
+            <p>✅ Ao final, capture a tela de conclusão de cada desafio</p>
+        </div>
+
+        <!-- Aviso sobre os links do Educolorir -->
+
+    </div>
+</body>
+</html>
